@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dream.blog.persistence.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dream.blog.persistence.entity.Article">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="sub_title" property="subTitle" />
+        <result column="origin" property="origin" />
+        <result column="author_id" property="authorId" />
+        <result column="author_name" property="authorName" />
+        <result column="creation_time" property="creationTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="access_path" property="accessPath" />
+        <result column="sort" property="sort" />
+        <result column="label" property="label" />
+        <result column="allow_access" property="allowAccess" />
+        <result column="allow_comments" property="allowComments" />
+        <result column="is_privcly" property="isPrivcly" />
+        <result column="is_stick" property="isStick" />
+        <result column="allow_update" property="allowUpdate" />
+        <result column="like_times" property="likeTimes" />
+        <result column="un_lick_times" property="unLickTimes" />
+        <result column="visit_times" property="visitTimes" />
+        <result column="is_collection" property="isCollection" />
+        <result column="is_show_comments" property="isShowComments" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+</mapper>
